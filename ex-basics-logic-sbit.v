@@ -15,7 +15,7 @@ module top;
     a = 1'bx;    $display( "1'bx   = %x ", a );
     a = 1'bz;    $display( "1'bz   = %x ", a );
 
-    // Logical operators for doing AND, OR, XOR, and NOT
+    // Bitwise logical operators for doing AND, OR, XOR, and NOT
 
     a = 1'b0;
     b = 1'b1;
@@ -25,7 +25,7 @@ module top;
     c = a ^ b;   $display( "0 ^ 1  = %x ", c );
     c = ~b;      $display( "~0     = %x ", c );
 
-    // Logical operators for doing AND, OR, XOR, and NOT with X
+    // Bitwise logical operators for doing AND, OR, XOR, and NOT with X
 
     a = 1'b0;
     b = 1'bx;
@@ -35,7 +35,7 @@ module top;
     c = a ^ b;   $display( "0 ^ x  = %x ", c );
     c = ~b;      $display( "~0     = %x ", c );
 
-    // Boolean operators
+    // Boolean logical operators
 
     a = 1'b0;
     b = 1'b1;
