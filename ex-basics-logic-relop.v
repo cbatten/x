@@ -32,6 +32,16 @@ module top;
     a = ( A <  B );   $display( "(4'b1100 <  4'b10xx) = %x", a );
     a = ( A <= B );   $display( "(4'b1100 <= 4'b10xx) = %x", a );
 
+    // Signed relational operators
+
+    A = 4'b1111; // -1 in twos complement
+    B = 4'd0001; //  1 in twos complement
+
+    a = (         A  >         B  ); $display( "(-1 > 1) = %x", a );
+    a = (         A  <         B  ); $display( "(-1 < 1) = %x", a );
+    a = ( $signed(A) > $signed(B) ); $display( "(-1 > 1) = %x", a );
+    a = ( $signed(A) < $signed(B) ); $display( "(-1 < 1) = %x", a );
+
   end
 
 endmodule
