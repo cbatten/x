@@ -41,21 +41,21 @@ module top;
     in = 8'h00;
     #10;
     if ( out != 8'h02 ) begin
-      $display( "ERROR: out, expected = %x, actual = %x", 8'h01, out );
+      $display( "ERROR: out, expected = %x, actual = %x", 8'h02, out );
       $finish;
     end
 
     in = 8'h13;
     #10;
     if ( out != 8'h15 ) begin
-      $display( "ERROR: out, expected = %x, actual = %x", 8'h14, out );
+      $display( "ERROR: out, expected = %x, actual = %x", 8'h15, out );
       $finish;
     end
 
     in = 8'h27;
     #10;
     if ( out != 8'h29 ) begin
-      $display( "ERROR: out, expected = %x, actual = %x", 8'h28, out );
+      $display( "ERROR: out, expected = %x, actual = %x", 8'h29, out );
       $finish;
     end
 
