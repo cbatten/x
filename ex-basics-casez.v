@@ -21,6 +21,7 @@ module top;
     endcase
 
     $display( "a = 4'b0100, b = %x", b );
+
   end
 
 endmodule
